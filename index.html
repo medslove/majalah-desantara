@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Majalah Desantara</title>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../../assets/jquery/jquery-3.6.0.min.js"></script>
+    <link
+      href="../../assets/bootstrap5/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../../assets/fontawesome5/css/all.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              class="img-fluid"
+              src="img/logo_majalah_d1.png"
+              alt="logo majalah desantara"
+            />
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <br /><br />
+            <form
+              role="search"
+              method="get"
+              id="searchform"
+              class="searchform"
+              action="http://wpsocial.localhost/"
+            >
+              <div class="input-group">
+                <label class="screen-reader-text" for="s"></label>
+                <input
+                  class="form-control"
+                  type="text"
+                  value=""
+                  name="s"
+                  id="s"
+                  placeholder="Pencarian"
+                />
+                <input
+                  class="btn btn-secondary"
+                  type="submit"
+                  id="searchsubmit"
+                  value="Cari"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <hr />
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="/"> <i class="fas fa-house-user"></i></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Sejarah</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Essay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Budaya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Sosial</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="text-white" href="#"
+                ><i class="fas fa-key"></i>&nbsp;Sign Up&nbsp;</a
+              >
+            </li>
+            <li>
+              <a class="text-white" href="#"
+                ><i class="fas fa-sign-in-alt"></i>&nbsp;Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div id="content-banner" class="bg-light py-5 shadow">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="jumbotron">
+                <img
+                  class="card-img-top rounded-top"
+                  src="../../assets/images/people/gary-mcgillivray-birnie-mxL_5v9yKEc-unsplash_2x1.jpg"
+                  alt=""
+                />
+                <div class="mb-4"></div>
+                <h2 class="mb-4">
+                  Science’s 2022 Breakthrough of the Year: A telescope’s golden
+                  eye
+                </h2>
+                <span class="tgl">
+                  <i class="far fa-clock"></i>13/3/2021&nbsp;
+                  <i class="fas fa-tag"></i>&nbsp;Kripik&nbsp;&nbsp;
+                  <i class="far fa-comment"></i> 330&nbsp;&nbsp;
+                </span>
+                <p class="lead">
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                  condimentum nibh, ut fermentum massa justo sit amet. Tellus ac
+                  cursus commodo, tortor mauris condimentum nibh, ut fermentum
+                  massa justo sit amet
+                </p>
+                <hr class="d-lg-none d-xl-none d-xl-block" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h2 class="title-cat mb-4">Terbaru</h2>
+
+              <ul class="list1">
+                <li class="first">
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="far fa-user"></i>&nbsp;Joko Santoso&nbsp;
+                  </span>
+                  <h5>A Brief History of Christmas Markets</h5>
+                </li>
+                <li>
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="far fa-user"></i>&nbsp;Joko Santoso&nbsp;
+                  </span>
+                  <h5>Take a Sneak Peek at Amtraks Newest Trains</h5>
+                </li>
+                <li>
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="far fa-user"></i>&nbsp;Joko Santoso&nbsp;
+                  </span>
+                  <h5>The Private World of the Public Artist Maya Lin</h5>
+                </li>
+                <li>
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="far fa-user"></i>&nbsp;Joko Santoso&nbsp;
+                  </span>
+                  <h5>Iceland's Christmas Book Flood Is a Force of Nature</h5>
+                </li>
+                <li>
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="far fa-user"></i>&nbsp;Joko Santoso&nbsp;
+                  </span>
+                  <h5>Indigenous Activists Criticize Avatar Sequel</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-5"></div>
+      <div class="container">
+        <div id="content-1" class="mb-4">
+          <div class="row">
+            <div class="col-md-4">
+              <h2 class="title-cat mb-4">Budaya</h2>
+              <div class="card mb-3 rounded shadow-md">
+                <img
+                  class="card-img-top rounded-top"
+                  src="../../assets/images/people/gary-mcgillivray-birnie-mxL_5v9yKEc-unsplash_2x1.jpg"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="mb-4">
+                    <a href="#"
+                      >We did most of the heavy lifting for you to provide</a
+                    >
+                  </h5>
+                  <span class="tgl"
+                    ><i class="far fa-user"></i>&nbsp;Sekar Dyah L &nbsp;
+                    <i class="fas fa-map-marker"></i>&nbsp;Yogyakarta
+                  </span>
+                  <p>
+                    Quickly get a project started with any of our examples
+                    ranging from using parts of the framework to custom
+                    components and layouts.
+                  </p>
+
+                  <hr />
+
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="fas fa-tag"></i>&nbsp;Kripik&nbsp;&nbsp;
+                    <i class="far fa-heart"></i>&nbsp;120&nbsp;&nbsp;
+                    <i class="far fa-comment"></i> 330&nbsp;&nbsp;
+                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                  </span>
+                </div>
+              </div>
+              <button class="btn btn-success float-end">More</button>
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-md-4">
+              <h2 class="title-cat mb-4">Sejarah</h2>
+
+              <div class="card mb-3 rounded shadow-sm">
+                <img
+                  class="card-img-top rounded-top"
+                  src="../../assets/images/people/gary-mcgillivray-birnie-mxL_5v9yKEc-unsplash_2x1.jpg"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="mb-4">
+                    <a href="#"
+                      >How These Contemporary Artists Are Redefining Family and
+                      Kinship</a
+                    >
+                  </h5>
+                  <span class="tgl"
+                    ><i class="far fa-user"></i>&nbsp;Sekar Dyah L
+                  </span>
+                  <p>
+                    Quickly get a project started with any of our examples
+                    ranging from using parts of the framework to custom
+                    components and layouts.
+                  </p>
+
+                  <hr />
+
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="fas fa-tag"></i>&nbsp;Sejarah&nbsp;&nbsp;
+                    <i class="far fa-comment"></i> 330&nbsp;&nbsp;
+                  </span>
+                </div>
+              </div>
+              <ul class="list-group mb-3">
+                <li class="list-group-item">
+                  <h5>A Brief History of Christmas Markets</h5>
+                </li>
+                <li class="list-group-item">
+                  <h5>Take a Sneak Peek at Amtraks Newest Trains</h5>
+                </li>
+                <li class="list-group-item">
+                  <h5>The Private World of the Public Artist Maya Lin</h5>
+                </li>
+              </ul>
+
+              <button class="btn btn-secondary float-end">More</button>
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-md-4">
+              <h2 class="title-cat mb-4">Profile</h2>
+              <div class="card mb-3 rounded shadow-sm">
+                <img
+                  class="card-img-top rounded-top"
+                  src="../../assets/images/people/gary-mcgillivray-birnie-mxL_5v9yKEc-unsplash_2x1.jpg"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="mb-4">
+                    <a href="#"
+                      >How These Contemporary Artists Are Redefining Family and
+                      Kinship</a
+                    >
+                  </h5>
+                  <span class="tgl"
+                    ><i class="far fa-user"></i>&nbsp;Sekar Dyah L
+                  </span>
+
+                  <hr />
+
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="far fa-comment"></i> 330&nbsp;&nbsp;
+                  </span>
+                </div>
+              </div>
+              <ul class="list-group mb-3 shadow-sm">
+                <li class="list-group-item pt-3">
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="far fa-user"></i>&nbsp;Sekar Dyah L &nbsp;
+                  </span>
+                  <div class="clearfix mb-3"></div>
+                  <h5>
+                    <a href="#"
+                      >Vandals Destroy 30,000-Year-Old Indigenous Cave Drawings
+                      in Australia</a
+                    >
+                  </h5>
+                </li>
+                <li class="list-group-item pt-3">
+                  <span class="tgl">
+                    <i class="far fa-user"></i>&nbsp;Sekar Dyah L &nbsp;
+                    <i class="fas fa-map-marker"></i>&nbsp;Yogyakarta
+                  </span>
+                  <div class="clearfix mb-3"></div>
+                  <h5>
+                    <a href="#"
+                      >Wizard of Oz' Hourglass Fetches $495,000 at Auction</a
+                    >
+                  </h5>
+                </li>
+                <li class="list-group-item pt-3">
+                  <span class="tgl">
+                    <i class="far fa-user"></i>&nbsp;Sekar Dyah L &nbsp;
+                    <i class="fas fa-map-marker"></i>&nbsp;Yogyakarta
+                  </span>
+                  <div class="clearfix mb-3"></div>
+                  <h5>
+                    <a href="#"
+                      >These Frogs Turn Nearly Invisible While Sleeping</a
+                    >
+                  </h5>
+                </li>
+                <li class="list-group-item pt-3">
+                  <span class="tgl">
+                    <i class="far fa-user"></i>&nbsp;Sekar Dyah L &nbsp;
+                    <i class="fas fa-map-marker"></i>&nbsp;Yogyakarta
+                  </span>
+                  <div class="clearfix mb-3"></div>
+                  <h5>
+                    <a href="#"
+                      >These Frogs Turn Nearly Invisible While Sleeping</a
+                    >
+                  </h5>
+                </li>
+                <li class="list-group-item pt-3">
+                  <span class="tgl">
+                    <i class="far fa-user"></i>&nbsp;Sekar Dyah L &nbsp;
+                    <i class="fas fa-map-marker"></i>&nbsp;Yogyakarta
+                  </span>
+                  <div class="clearfix mb-3"></div>
+                  <h5>
+                    <a href="#"
+                      >These Frogs Turn Nearly Invisible While Sleeping</a
+                    >
+                  </h5>
+                </li>
+              </ul>
+              <button class="btn btn-success float-end">More</button>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div id="content-2" class="mb-4">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="card mb-3 rounded shadow-sm">
+                <img
+                  class="card-img-top rounded-top"
+                  src="../../assets/images/people/gary-mcgillivray-birnie-mxL_5v9yKEc-unsplash_2x1.jpg"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="mb-4">
+                    <a href="#"
+                      >How These Contemporary Artists Are Redefining Family and
+                      Kinship</a
+                    >
+                  </h5>
+                  <span class="tgl"
+                    ><i class="far fa-user"></i>&nbsp;Sekar Dyah L
+                  </span>
+
+                  <hr />
+
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="fas fa-tag"></i>&nbsp;Sejarah&nbsp;&nbsp;
+                    <i class="far fa-comment"></i> 330&nbsp;&nbsp;
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card mb-3 rounded shadow-sm">
+                <img
+                  class="card-img-top rounded-top"
+                  src="../../assets/images/people/gary-mcgillivray-birnie-mxL_5v9yKEc-unsplash_2x1.jpg"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="mb-4">
+                    <a href="#"
+                      >How These Contemporary Artists Are Redefining Family and
+                      Kinship</a
+                    >
+                  </h5>
+                  <span class="tgl"
+                    ><i class="far fa-user"></i>&nbsp;Sekar Dyah L
+                  </span>
+
+                  <hr />
+
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="fas fa-tag"></i>&nbsp;Sejarah&nbsp;&nbsp;
+                    <i class="far fa-comment"></i> 330&nbsp;&nbsp;
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card mb-3 rounded shadow-sm">
+                <img
+                  class="card-img-top rounded-top"
+                  src="../../assets/images/people/gary-mcgillivray-birnie-mxL_5v9yKEc-unsplash_2x1.jpg"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="mb-4">
+                    <a href="#"
+                      >How These Contemporary Artists Are Redefining Family and
+                      Kinship</a
+                    >
+                  </h5>
+                  <span class="tgl"
+                    ><i class="far fa-user"></i>&nbsp;Sekar Dyah L
+                  </span>
+
+                  <hr />
+
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="fas fa-tag"></i>&nbsp;Sejarah&nbsp;&nbsp;
+                    <i class="far fa-comment"></i> 330&nbsp;&nbsp;
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card mb-3 rounded shadow-sm">
+                <img
+                  class="card-img-top rounded-top"
+                  src="../../assets/images/people/gary-mcgillivray-birnie-mxL_5v9yKEc-unsplash_2x1.jpg"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="mb-4">
+                    <a href="#"
+                      >How These Contemporary Artists Are Redefining Family and
+                      Kinship</a
+                    >
+                  </h5>
+                  <span class="tgl"
+                    ><i class="far fa-user"></i>&nbsp;Sekar Dyah L
+                  </span>
+
+                  <hr />
+
+                  <span class="tgl">
+                    <i class="far fa-clock"></i>13/3/2021&nbsp;
+                    <i class="fas fa-tag"></i>&nbsp;Sejarah&nbsp;&nbsp;
+                    <i class="far fa-comment"></i> 330&nbsp;&nbsp;
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="content-3">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="title-cat mb-4">Langganan</h2>
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <p>
+                    Masukkan email untuk mendapatkan pemberitahuan tulisan
+                    terbaru dari Majalah Desantara
+                  </p>
+                  <form>
+                    <div class="input-group">
+                      <label class="screen-reader-text" for="s"></label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        value=""
+                        name="s"
+                        id="s"
+                        placeholder="Pencarian"
+                      />
+                      <input
+                        class="btn btn-secondary"
+                        type="submit"
+                        id="searchsubmit"
+                        value="Submit"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h2 class="title-cat mb-4">Lokasi</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="mb-5"></div>
+
+    <footer class="bg-light shadow border-top pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="mb-4">Majalah Desantara</h5>
+            <p>
+              diterbitkan oleh Yayasan Desantara<br />
+              <img
+                src="img/logo-desantara.png"
+                alt="description"
+                title="tool tip"
+                width="100"
+              />
+              <br />
+              <br />
+              <i class="fas fa-map-marker"></i>&nbsp;Komplek Depok Lama Alam
+              Permai K3<br />
+              Depok – Jawa Barat 16431<br />
+            </p>
+            <p>
+              Saran, masukan, pertanyaan, kritikan, atau keberatan harap
+              disampaikan melaui email: office@desantara.or.id
+            </p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h5 class="mb-4">Tentang Kami</h5>
+            <ul>
+              <li>Yayasan Desantara</li>
+              <li>Majalah Desantara</li>
+              <li>Cara mengirim tulisan</li>
+              <li>Kebijakan Kerahasiaan</li>
+              <li>Perjalanan Majalah Desantara</li>
+              <li>Hubungi Kami</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <h5 class="mb-4">Temukan Kami</h5>
+            <ul>
+              <li>Website Desantara.or.id</li>
+              <li>Desantara on Facebook</li>
+              <li>Desantara on Youtube</li>
+              <li>Majalah Desantara on Youtube</li>
+              <li>Srinthil</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="under-footer" class="bg-dark text-white pt-3 mt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p>&copy; 2022 by Desantara.or.id</p>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/bootstrap5/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
