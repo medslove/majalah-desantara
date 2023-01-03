@@ -1,0 +1,134 @@
+
+
+body {
+/*  font-family: "Roboto", sans-serif !important;*/
+font-family: "Roboto", sans-serif !important;
+/*  font-family: Arial, Helvetica, sans-serif;*/
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #3d3846;
+}
+
+a:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
+.text-orange {
+  color: #fd7e14;
+}
+
+.tgl {
+  font-size: 0.9em;
+  margin-bottom: 0.9rem;
+  display: block;
+}
+
+.img-left {
+  float: left;
+  margin: 0 1rem 0 0;
+}
+
+.image-box {
+  padding: 1px;
+  border: 1px solid #ddd;
+}
+
+.caption {
+  padding: 1rem;
+  font-style: italic;
+  background-color: #ddd;
+}
+
+/*
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}
+*/
+/* Temporary until Bootstrap 5 brings these rules back... */
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+/* utilities
+*/
+ul.list1 li a,
+ul.list1 li a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul.list1 li a:hover {
+  color: aqua;
+}
+
+.bg-green {
+  background-color: #1c6705;
+}
+
+.under-footer p {
+  font-size: 0.7rem;
+}
+
+.title-cat{
+        border-bottom: 4px solid #1cad02;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding-bottom:0.5rem;
+
+}
+
+.rounded{
+     border-radius: 2rem;
+}
+
+
+ul.list1{
+   margin: 0;
+   padding: 0;
+
+}
+
+ul.list1 li{
+   list-style-type: none;
+   margin-bottom: 1rem;
+   padding-bottom: 1rem;
+   border-bottom: 1px solid #666;
+}
+
+
